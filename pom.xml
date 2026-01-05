@@ -20,22 +20,20 @@
     <name>API Gateway</name>
     <description>Spring Cloud API Gateway</description>
 
-    <!-- ================= PROPERTIES ================= -->
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2023.0.1</spring-cloud.version>
     </properties>
 
-    <!-- ================= DEPENDENCIES ================= -->
     <dependencies>
 
-        <!-- Spring Cloud Gateway (Reactive) -->
+        <!-- Spring Cloud Gateway -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
-        <!-- WebFlux (MANDATORY for Gateway) -->
+        <!-- WebFlux -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
@@ -68,7 +66,6 @@
 
     </dependencies>
 
-    <!-- ================= DEPENDENCY MANAGEMENT ================= -->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -81,7 +78,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <!-- ================= BUILD ================= -->
     <build>
         <plugins>
             <plugin>
